@@ -1,0 +1,113 @@
+# ---- General ----
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Type checkers
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ---- Ansible ----
+# Encryption secrets (NEVER commit real vault passwords)
+.vault_pass
+vault_pass.txt
+vault_password.txt
+*.vault_pass
+*.vault_pass.txt
+
+# Ansible retry files
+*.retry
+
+# Ansible facts cache
+.ansible/
+.ansible_cache/
+ansible_facts_cache/
+
+# Ansible collections/roles build artifacts
+roles/*/.ropeproject/
+roles/*/.pytest_cache/
+roles/*/__pycache__/
+
+# Local inventory / host vars that shouldn't be shared
+inventory.local
+hosts.local
+*.local.yml
+*.local.yaml
+
+# SSH keys and secrets (double-check you don't rename these differently)
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+
+# ---- OS / Misc ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+

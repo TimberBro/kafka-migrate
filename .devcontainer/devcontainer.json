@@ -1,5 +1,5 @@
 {
-  "name": "kafka-migrate (ansible)",
+  "name": "kafka-migrate",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
@@ -22,6 +22,6 @@
     }
   },
   "postCreateCommand": "chmod +x init-kafka-cluster/get-dependent-roles.sh && ./init-kafka-cluster/get-dependent-roles.sh",
-  "remoteUser": "vscode",
+  "remoteUser": "root",
   "workspaceFolder": "/workspaces/kafka-migrate"
 }

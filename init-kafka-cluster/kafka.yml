@@ -5,6 +5,8 @@
     zookeeper_servers_use_inventory_hostname: true
     kafka_version: "3.9.0"
   roles:
-    - zookeeper
-    - ansible-kafka
+    - geerlingguy.java
+    - sleighzy.zookeeper
+    - sleighzy.kafka
+
     
