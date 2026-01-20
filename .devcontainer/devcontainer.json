@@ -1,0 +1,27 @@
+{
+  "name": "kafka-migrate (ansible)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false
+    },
+    "ghcr.io/devcontainers-extra/features/ansible:2": {},
+    "ghcr.io/devcontainers-extra/features/mise:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "redhat.vscode-yaml",
+        "ms-python.python"
+      ],
+      "settings": {
+        "ansible.executionEnvironment.enabled": false,
+        "ansible.python.interpreterPath": "/usr/bin/python3"
+      }
+    }
+  },
+  "postCreateCommand": "chmod +x init-kafka-cluster/get-dependent-roles.sh && ./init-kafka-cluster/get-dependent-roles.sh",
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspaces/kafka-migrate"
+}

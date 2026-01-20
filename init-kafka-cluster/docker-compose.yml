@@ -1,0 +1,11 @@
+services:
+  ui:
+    image: provectuslabs/kafka-ui:v0.7.2
+    ports:
+      - "6060:8080"
+    environment:
+      - KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS=node-01:9092,node-04:9092
+      - KAFKA_CLUSTERS_0_NAME=kraft
+    extra_hosts:
+      - node-04:172.16.0.5
+      - node-01:172.16.0.2

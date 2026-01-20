@@ -1,0 +1,10 @@
+- hosts: all
+  become: true
+  vars:
+    kafka_nodes: "{{ groups['all'] }}"
+    zookeeper_servers_use_inventory_hostname: true
+    kafka_version: "3.9.0"
+  roles:
+    - zookeeper
+    - ansible-kafka
+    
